@@ -1,0 +1,22 @@
+Algoritmo pseudo7
+	Definir random, contadorpares, contadorimpares, contador0 Como Entero
+	Definir porcenteje1, porcentaje2, porcentaje3 Como Real
+	Para x<-1 Hasta 15 Con Paso 1 Hacer
+		random = azar(37)
+		Si random % 2 == 0 y random <> 0 Entonces
+			contadorpares = contadorpares + 1
+			
+		FinSi
+		Si random % 2 <> 0 y random <> 0 Entonces
+			contadorimpares = contadorimpares + 1
+		FinSi
+		Si random == 0 Entonces
+			contador0 = contador0 + 1
+		FinSi
+		Escribir random
+	Fin Para
+	porcenteje1 = (contadorpares * 100) / 15
+	porcentaje2 = (contadorimpares * 100) / 15
+	porcentaje3 = (contador0 * 100) / 15
+	Escribir "El porcentaje de numeros pares fue de ", porcenteje1,"%, El porcentaje de impares fue de ", porcentaje2,"%, el porcentaje de 0 fue de ", porcentaje3,"%"
+FinAlgoritmo
